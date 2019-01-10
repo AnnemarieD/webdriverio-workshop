@@ -1,4 +1,5 @@
-# Add the latest browser drivers to your WebdriverIO config
+# Basic Assignments
+## Add the latest browser drivers to your WebdriverIO config
   Use the [documentation](http://webdriver.io/guide/services/selenium-standalone.html#seleniumArgs) if needed
 
   Open another terminal window and change directory to `e2e-wdio-mocha`
@@ -11,13 +12,14 @@
 
   Add the selenium config object to your config using the properties `seleniumInstallArgs` and `seleniumArgs`
 
-# Create page object models, components and run tests
+## Create page object models, components and run tests
   Use the [documentation](http://webdriver.io/guide/testrunner/pageobjects.html) if needed
 
   Open a terminal window
 
   Open another terminal window and change directory to `e2e-wdio-jasmine`
 
+### Create page object models
   Create a page object called `Page` `[page.js]`
   
     1. Add a method called `navigateTo` and make it navigate to a specific path which is passed in as an argument
@@ -31,6 +33,7 @@
         getCards - get all the Angular card elements on the page
         navigateTo - navigate to the tips-and-tricks page (tip: do not forget to use the `super` keyword here)
 
+### Create components
   Create a card and search component and add them to the page objects you've just created
 
     title
@@ -62,9 +65,17 @@
     2. create a constructor
     3. add `this.search` to the constructor and assign a new instance of the search component class
 
+### Run tests
   Run the tests that are predefined in the `e2e-wdio-jasmine` folder by running `npm test` from the terminal
 
-# Create suites
+## Write a test
+  Use the [documentation](https://webdriver.io/docs/api.html) if needed
+
+  Open a terminal window and change directory to `e2e-wdio-jasmine`
+  
+  Write a test in the file e2e-wdio-mocha/test/specs/basic/about-me.js
+
+## Create suites
 
   Use the [documentation](http://webdriver.io/guide/testrunner/organizesuite.html#Group-Test-Specs) if needed
 
@@ -74,13 +85,13 @@
 
   Run only the basic tests using the `--suite` flag
 
-# Run in the cloud
+## Run in the cloud
 
   Use the [documentation](http://webdriver.io/guide/testrunner/organizesuite.html#Group-Test-Specs) if needed
 
   It's a best practice to not put sensitive data in your code, instead use environment variables to be stored on your machine.
 
-  ## Setting Environment Variables for Mac OS X/Linux
+  ### Setting Environment Variables for Mac OS X/Linux
     In Terminal mode, enter vi ~/.bash_profile, and then press Enter.
     Press i to insert text into your profile file.
     Enter these lines:
@@ -92,7 +103,7 @@
 
     In the terminal, enter source ~/.bash_profile.
 
-  ## Setting Environment Variables for Authentication Credentials on Windows
+  ### Setting Environment Variables for Authentication Credentials on Windows
     Click Start on the task bar.
     For Search programs and fields, enter Environment Variables.
     Click Edit the environment variables. 
@@ -112,3 +123,6 @@
   Add a property called `key` the top, just below the exports.config part and add the following value `process.env.SAUCE_ACCESS_KEY`
 
   Run the tests using `npm test`
+
+## Find the bug
+  A bug can be found in the mocha tests. Can you find it?

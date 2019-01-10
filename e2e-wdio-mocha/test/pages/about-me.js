@@ -16,7 +16,7 @@ function customSelectByVisibleText(text) {
   this.dropdown.waitForVisible(null, true);
 }
 
-module.exports = class TipsAndTricksPage extends Page {
+module.exports = class AboutMePage extends Page {
   constructor() {
     super();
 
