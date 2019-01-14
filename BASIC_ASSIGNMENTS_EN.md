@@ -15,9 +15,7 @@
 ## Create page object models, components and run tests
   Use the [documentation](http://webdriver.io/guide/testrunner/pageobjects.html) if needed
 
-  Open a terminal window
-
-  Open another terminal window and change directory to `e2e-wdio-jasmine`
+  Open a terminal window and change directory to `e2e-wdio-jasmine`
 
 ### Create page object models
   Create a page object called `Page` `[page.js]`

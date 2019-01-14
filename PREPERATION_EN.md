@@ -1,5 +1,9 @@
 # Preperations
 
+## Clone repository
+  
+  Clone this repository: https://github.com/AnnemarieD/webdriverio-workshop.git
+
 ## Install all dependencies in the project
 
   Open a terminal window
